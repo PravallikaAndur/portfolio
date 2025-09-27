@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>My Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styling.css">
+<script src="https://kit.fontawesome.com/a2d9d6f9b4.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+<nav class="navbar">
+<div class="nav-left">My Portfolio</div>
+<ul class="nav-links">
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About Me</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+<button class="nav-toggle" aria-label="toggle menu">☰</button>
+</nav>
+
+
+<main>
+<section id="home" class="hero">
+<div class="hero-left">
+<div class="profile-card">
+<img src="profile2.jpg" alt="Profile" class="profile-pic" />
+<div class="profile-text">
+<p class="hello">Hello! I am</p>
+<h1 id="myName">Pravallika Andur</h1>
+<p class="typewriter"><span id="typed"></span><span class="cursor">|</span></p>
+</div>
+</div>
+</div>
+
+
+<div class="hero-right">
+<div class="about-preview">
+<h2>About Me</h2>
+<p>
+I am a passionate web developer and lifelong learner who transforms ideas into beautiful and usable web experiences. I enjoy designing clean interfaces, learning new technologies, and building projects that solve real problems. I bring a mix of creativity and technical skill — whether it's crafting smooth front-end interactions or building reliable server-side features.
+</p>
+</div>
+
+
+<!-- Education Section -->
+<section id="education">
+  <h2>🎓 Education</h2>
+  <div class="education-container">
+    <div class="edu-card graduation">
+      <h3>Graduation</h3>
+      <p><b>Institute:</b> Guru Nanak Institutions Technical Campus</p>
+      <p><b>Duration:</b> 2022 - 2026</p>
+      <p><b>CGPA:</b> 8.29 / 10</p>
+    </div>
+
+    <div class="edu-card intermediate">
+      <h3>Intermediate</h3>
+      <p><b>Institute:</b> Resonance Junior College</p>
+      <p><b>Duration:</b> 2020 - 2022</p>
+      <p><b>Percentage:</b> 87.6%</p>
+    </div>
+
+    <div class="edu-card school">
+      <h3>School</h3>
+      <p><b>Institute:</b> Sanghamitra High School</p>
+      <p><b>Duration:</b> 2009 - 2020</p>
+      <p><b>Percentage:</b> 100%</p>
+    </div>
+  </div>
+</section>
+
+<!-- Technical Skills Section -->
+<section id="skills">
+  <h2>🛠 Technical Skills</h2>
+  <div class="skills-container">
+    <div class="skill-card frontend">
+      <h3>Frontend</h3>
+      <p>HTML, CSS, JavaScript</p>
+    </div>
+
+    <div class="skill-card backend">
+      <h3>Backend</h3>
+      <p>Node.js, Java, MySQL</p>
+    </div>
+
+    <div class="skill-card tools">
+      <h3>Tools</h3>
+      <p>Figma, Microsoft Suite, VS Code, Adobe XD, Adobe Express, Power BI, Tableau</p>
+    </div>
+  </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects">
+  <h2>💻 Projects</h2>
+  <div class="projects-container">
+
+    <!-- Project 1 -->
+    <div class="project-card">
+      <img src="project1.jpg" alt="Portfolio Website">
+      <h3>Personal Portfolio Website</h3>
+      <p>A fully responsive portfolio website showcasing my skills, education, and projects.</p>
+      <a href="https://github.com/YourUsername/portfolio-project" target="_blank" class="project-link">
+        <i class="fab fa-github"></i> View on GitHub
+      </a>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="project-card">
+      <img src="project2.jpg" alt="Flora Fete Project">
+      <h3>Flora Fete</h3>
+      <p>A simple website built with HTML and CSS to manage event decorations and schedules.</p>
+      <a href="https://github.com/PravallikaAndur/florafete" target="_blank" class="project-link">
+        <i class="fab fa-github"></i> View on GitHub
+      </a>
+    </div>
+
+  </div>
+</section>
+
+
+
+<!-- Contact Section -->
+<section id="contact">
+  <h2>📬 Contact Me</h2>
+  <div class="contact-container">
+    <!-- Email -->
+    <a href="mailto:pravallikar30@gmail.com" target="_blank" class="contact-link email">
+      <i class="fas fa-envelope"></i> pravallikar30@gmail.com
+    </a>
+
+    <!-- LinkedIn -->
+    <a href="https://www.linkedin.com/in/pravallika-andur-319659295?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="contact-link linkedin">
+      <i class="fab fa-linkedin"></i> Pravallika Andur
+    </a>
+
+    <!-- Instagram -->
+    <a href="https://www.instagram.com/__reddy_pravs_?igsh=dGdqeDN6b2x5dXl1" target="_blank" class="contact-link instagram">
+      <i class="fab fa-instagram"></i> reddy_pravs
+    </a>
+  </div>
+</section>
+
+
+
+<form id="contactForm" class="contact-form">
+<input type="text" name="name" placeholder="Your name" required />
+<input type="email" name="email" placeholder="Your email" required />
+<textarea name="message" rows="4" placeholder="Message" required></textarea>
+<button type="submit">Send Message</button>
+<p id="formStatus" class="status"></p>
+</form>
+</div>
+
+
+</div>
+</section>
+</main>
+
+
+<footer>
+<p>© <span id="year"></span> Pravallika Andur — Built with ❤️</p>
+</footer>
+
+
+<script src="scripting.js"></script>
+</body>
+</html>
